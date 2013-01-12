@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		731278B816A1F3D800DCCD95 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 731278B716A1F3D800DCCD95 /* UIKit.framework */; };
+		731278BA16A1F3D800DCCD95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 731278B916A1F3D800DCCD95 /* Foundation.framework */; };
+		731278BC16A1F3D800DCCD95 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 731278BB16A1F3D800DCCD95 /* CoreGraphics.framework */; };
+		731278C216A1F3D800DCCD95 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 731278C016A1F3D800DCCD95 /* InfoPlist.strings */; };
+		731278C416A1F3D800DCCD95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 731278C316A1F3D800DCCD95 /* main.m */; };
+		731278C816A1F3D800DCCD95 /* KDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 731278C716A1F3D800DCCD95 /* KDAppDelegate.m */; };
+		731278CA16A1F3D800DCCD95 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 731278C916A1F3D800DCCD95 /* Default.png */; };
+		731278CC16A1F3D800DCCD95 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 731278CB16A1F3D800DCCD95 /* Default@2x.png */; };
+		731278CE16A1F3D800DCCD95 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 731278CD16A1F3D800DCCD95 /* Default-568h@2x.png */; };
+		731278D116A1F3D800DCCD95 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 731278CF16A1F3D800DCCD95 /* MainStoryboard_iPhone.storyboard */; };
+		731278D416A1F3D800DCCD95 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 731278D216A1F3D800DCCD95 /* MainStoryboard_iPad.storyboard */; };
+		731278D716A1F3D800DCCD95 /* KDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 731278D616A1F3D800DCCD95 /* KDViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		731278B316A1F3D800DCCD95 /* Cathedral.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cathedral.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		731278B716A1F3D800DCCD95 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		731278B916A1F3D800DCCD95 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		731278BB16A1F3D800DCCD95 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		731278BF16A1F3D800DCCD95 /* Cathedral-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Cathedral-Info.plist"; sourceTree = "<group>"; };
+		731278C116A1F3D800DCCD95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		731278C316A1F3D800DCCD95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		731278C516A1F3D800DCCD95 /* Cathedral-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cathedral-Prefix.pch"; sourceTree = "<group>"; };
+		731278C616A1F3D800DCCD95 /* KDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KDAppDelegate.h; sourceTree = "<group>"; };
+		731278C716A1F3D800DCCD95 /* KDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KDAppDelegate.m; sourceTree = "<group>"; };
+		731278C916A1F3D800DCCD95 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		731278CB16A1F3D800DCCD95 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		731278CD16A1F3D800DCCD95 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		731278D016A1F3D800DCCD95 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		731278D316A1F3D800DCCD95 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		731278D516A1F3D800DCCD95 /* KDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KDViewController.h; sourceTree = "<group>"; };
+		731278D616A1F3D800DCCD95 /* KDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KDViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		731278B016A1F3D800DCCD95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				731278B816A1F3D800DCCD95 /* UIKit.framework in Frameworks */,
+				731278BA16A1F3D800DCCD95 /* Foundation.framework in Frameworks */,
+				731278BC16A1F3D800DCCD95 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		731278A816A1F3D800DCCD95 = {
+			isa = PBXGroup;
+			children = (
+				731278BD16A1F3D800DCCD95 /* Cathedral */,
+				731278B616A1F3D800DCCD95 /* Frameworks */,
+				731278B416A1F3D800DCCD95 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		731278B416A1F3D800DCCD95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				731278B316A1F3D800DCCD95 /* Cathedral.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		731278B616A1F3D800DCCD95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				731278B716A1F3D800DCCD95 /* UIKit.framework */,
+				731278B916A1F3D800DCCD95 /* Foundation.framework */,
+				731278BB16A1F3D800DCCD95 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		731278BD16A1F3D800DCCD95 /* Cathedral */ = {
+			isa = PBXGroup;
+			children = (
+				731278CF16A1F3D800DCCD95 /* MainStoryboard_iPhone.storyboard */,
+				731278D216A1F3D800DCCD95 /* MainStoryboard_iPad.storyboard */,
+				731278D516A1F3D800DCCD95 /* KDViewController.h */,
+				731278D616A1F3D800DCCD95 /* KDViewController.m */,
+				731278BE16A1F3D800DCCD95 /* Supporting Files */,
+			);
+			path = Cathedral;
+			sourceTree = "<group>";
+		};
+		731278BE16A1F3D800DCCD95 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				731278C616A1F3D800DCCD95 /* KDAppDelegate.h */,
+				731278C716A1F3D800DCCD95 /* KDAppDelegate.m */,
+				731278BF16A1F3D800DCCD95 /* Cathedral-Info.plist */,
+				731278C016A1F3D800DCCD95 /* InfoPlist.strings */,
+				731278C316A1F3D800DCCD95 /* main.m */,
+				731278C516A1F3D800DCCD95 /* Cathedral-Prefix.pch */,
+				731278C916A1F3D800DCCD95 /* Default.png */,
+				731278CB16A1F3D800DCCD95 /* Default@2x.png */,
+				731278CD16A1F3D800DCCD95 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		731278B216A1F3D800DCCD95 /* Cathedral */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 731278DA16A1F3D800DCCD95 /* Build configuration list for PBXNativeTarget "Cathedral" */;
+			buildPhases = (
+				731278AF16A1F3D800DCCD95 /* Sources */,
+				731278B016A1F3D800DCCD95 /* Frameworks */,
+				731278B116A1F3D800DCCD95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cathedral;
+			productName = Cathedral;
+			productReference = 731278B316A1F3D800DCCD95 /* Cathedral.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		731278AA16A1F3D800DCCD95 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KD;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Cristián Arenas Ulloa";
+			};
+			buildConfigurationList = 731278AD16A1F3D800DCCD95 /* Build configuration list for PBXProject "Cathedral" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 731278A816A1F3D800DCCD95;
+			productRefGroup = 731278B416A1F3D800DCCD95 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				731278B216A1F3D800DCCD95 /* Cathedral */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		731278B116A1F3D800DCCD95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				731278C216A1F3D800DCCD95 /* InfoPlist.strings in Resources */,
+				731278CA16A1F3D800DCCD95 /* Default.png in Resources */,
+				731278CC16A1F3D800DCCD95 /* Default@2x.png in Resources */,
+				731278CE16A1F3D800DCCD95 /* Default-568h@2x.png in Resources */,
+				731278D116A1F3D800DCCD95 /* MainStoryboard_iPhone.storyboard in Resources */,
+				731278D416A1F3D800DCCD95 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		731278AF16A1F3D800DCCD95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				731278C416A1F3D800DCCD95 /* main.m in Sources */,
+				731278C816A1F3D800DCCD95 /* KDAppDelegate.m in Sources */,
+				731278D716A1F3D800DCCD95 /* KDViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		731278C016A1F3D800DCCD95 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				731278C116A1F3D800DCCD95 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		731278CF16A1F3D800DCCD95 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				731278D016A1F3D800DCCD95 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		731278D216A1F3D800DCCD95 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				731278D316A1F3D800DCCD95 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		731278D816A1F3D800DCCD95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		731278D916A1F3D800DCCD95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		731278DB16A1F3D800DCCD95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Cathedral/Cathedral-Prefix.pch";
+				INFOPLIST_FILE = "Cathedral/Cathedral-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		731278DC16A1F3D800DCCD95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Cathedral/Cathedral-Prefix.pch";
+				INFOPLIST_FILE = "Cathedral/Cathedral-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		731278AD16A1F3D800DCCD95 /* Build configuration list for PBXProject "Cathedral" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				731278D816A1F3D800DCCD95 /* Debug */,
+				731278D916A1F3D800DCCD95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		731278DA16A1F3D800DCCD95 /* Build configuration list for PBXNativeTarget "Cathedral" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				731278DB16A1F3D800DCCD95 /* Debug */,
+				731278DC16A1F3D800DCCD95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 731278AA16A1F3D800DCCD95 /* Project object */;
+}
