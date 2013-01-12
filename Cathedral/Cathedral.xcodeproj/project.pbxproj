@@ -19,6 +19,13 @@
 		731278D116A1F3D800DCCD95 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 731278CF16A1F3D800DCCD95 /* MainStoryboard_iPhone.storyboard */; };
 		731278D416A1F3D800DCCD95 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 731278D216A1F3D800DCCD95 /* MainStoryboard_iPad.storyboard */; };
 		731278D716A1F3D800DCCD95 /* KDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 731278D616A1F3D800DCCD95 /* KDViewController.m */; };
+		731278E816A1F79B00DCCD95 /* KDPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 731278E716A1F79B00DCCD95 /* KDPlayer.m */; };
+		731278EB16A1F7D700DCCD95 /* KDBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 731278EA16A1F7D700DCCD95 /* KDBoard.m */; };
+		731278EE16A1F81D00DCCD95 /* KDPiece.m in Sources */ = {isa = PBXBuildFile; fileRef = 731278ED16A1F81D00DCCD95 /* KDPiece.m */; };
+		731278F116A1F86500DCCD95 /* KDGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 731278F016A1F86500DCCD95 /* KDGame.m */; };
+		731278F416A1F88400DCCD95 /* KDPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 731278F316A1F88300DCCD95 /* KDPoint.m */; };
+		731278F716A1F8A500DCCD95 /* KDPlacement.m in Sources */ = {isa = PBXBuildFile; fileRef = 731278F616A1F8A500DCCD95 /* KDPlacement.m */; };
+		731278FA16A1F8F700DCCD95 /* KDShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 731278F916A1F8F700DCCD95 /* KDShape.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +46,20 @@
 		731278D316A1F3D800DCCD95 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		731278D516A1F3D800DCCD95 /* KDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KDViewController.h; sourceTree = "<group>"; };
 		731278D616A1F3D800DCCD95 /* KDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KDViewController.m; sourceTree = "<group>"; };
+		731278E616A1F79B00DCCD95 /* KDPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KDPlayer.h; path = Model/KDPlayer.h; sourceTree = "<group>"; };
+		731278E716A1F79B00DCCD95 /* KDPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KDPlayer.m; path = Model/KDPlayer.m; sourceTree = "<group>"; };
+		731278E916A1F7D700DCCD95 /* KDBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KDBoard.h; path = Model/KDBoard.h; sourceTree = "<group>"; };
+		731278EA16A1F7D700DCCD95 /* KDBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KDBoard.m; path = Model/KDBoard.m; sourceTree = "<group>"; };
+		731278EC16A1F81D00DCCD95 /* KDPiece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KDPiece.h; path = Model/KDPiece.h; sourceTree = "<group>"; };
+		731278ED16A1F81D00DCCD95 /* KDPiece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KDPiece.m; path = Model/KDPiece.m; sourceTree = "<group>"; };
+		731278EF16A1F86500DCCD95 /* KDGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KDGame.h; path = Model/KDGame.h; sourceTree = "<group>"; };
+		731278F016A1F86500DCCD95 /* KDGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KDGame.m; path = Model/KDGame.m; sourceTree = "<group>"; };
+		731278F216A1F88300DCCD95 /* KDPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KDPoint.h; path = Model/KDPoint.h; sourceTree = "<group>"; };
+		731278F316A1F88300DCCD95 /* KDPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KDPoint.m; path = Model/KDPoint.m; sourceTree = "<group>"; };
+		731278F516A1F8A500DCCD95 /* KDPlacement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KDPlacement.h; path = Model/KDPlacement.h; sourceTree = "<group>"; };
+		731278F616A1F8A500DCCD95 /* KDPlacement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KDPlacement.m; path = Model/KDPlacement.m; sourceTree = "<group>"; };
+		731278F816A1F8F700DCCD95 /* KDShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KDShape.h; path = Model/KDShape.h; sourceTree = "<group>"; };
+		731278F916A1F8F700DCCD95 /* KDShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KDShape.m; path = Model/KDShape.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +106,7 @@
 		731278BD16A1F3D800DCCD95 /* Cathedral */ = {
 			isa = PBXGroup;
 			children = (
+				731278E216A1F75000DCCD95 /* Model */,
 				731278CF16A1F3D800DCCD95 /* MainStoryboard_iPhone.storyboard */,
 				731278D216A1F3D800DCCD95 /* MainStoryboard_iPad.storyboard */,
 				731278D516A1F3D800DCCD95 /* KDViewController.h */,
@@ -108,6 +130,27 @@
 				731278CD16A1F3D800DCCD95 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		731278E216A1F75000DCCD95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				731278E616A1F79B00DCCD95 /* KDPlayer.h */,
+				731278E716A1F79B00DCCD95 /* KDPlayer.m */,
+				731278E916A1F7D700DCCD95 /* KDBoard.h */,
+				731278EA16A1F7D700DCCD95 /* KDBoard.m */,
+				731278EC16A1F81D00DCCD95 /* KDPiece.h */,
+				731278ED16A1F81D00DCCD95 /* KDPiece.m */,
+				731278EF16A1F86500DCCD95 /* KDGame.h */,
+				731278F016A1F86500DCCD95 /* KDGame.m */,
+				731278F216A1F88300DCCD95 /* KDPoint.h */,
+				731278F316A1F88300DCCD95 /* KDPoint.m */,
+				731278F516A1F8A500DCCD95 /* KDPlacement.h */,
+				731278F616A1F8A500DCCD95 /* KDPlacement.m */,
+				731278F816A1F8F700DCCD95 /* KDShape.h */,
+				731278F916A1F8F700DCCD95 /* KDShape.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +224,13 @@
 				731278C416A1F3D800DCCD95 /* main.m in Sources */,
 				731278C816A1F3D800DCCD95 /* KDAppDelegate.m in Sources */,
 				731278D716A1F3D800DCCD95 /* KDViewController.m in Sources */,
+				731278E816A1F79B00DCCD95 /* KDPlayer.m in Sources */,
+				731278EB16A1F7D700DCCD95 /* KDBoard.m in Sources */,
+				731278EE16A1F81D00DCCD95 /* KDPiece.m in Sources */,
+				731278F116A1F86500DCCD95 /* KDGame.m in Sources */,
+				731278F416A1F88400DCCD95 /* KDPoint.m in Sources */,
+				731278F716A1F8A500DCCD95 /* KDPlacement.m in Sources */,
+				731278FA16A1F8F700DCCD95 /* KDShape.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
