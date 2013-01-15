@@ -10,6 +10,6 @@
 
 @interface KDGame : NSObject
 
-@property NSArray *placements;
+@property NSMutableArray *placements;
 
 @end

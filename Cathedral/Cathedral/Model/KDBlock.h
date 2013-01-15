@@ -1,5 +1,5 @@
 //
-//  KDPoint.h
+//  KDBlock.h
 //  Cathedral
 //
 //  Created by Cristián Arenas Ulloa on 1/12/13.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface KDPoint : NSObject
+@interface KDBlock : NSObject
 
 @property int x;
 @property int y;

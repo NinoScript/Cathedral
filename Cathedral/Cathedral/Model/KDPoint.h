@@ -10,4 +10,7 @@
 
 @interface KDPoint : NSObject
 
+@property int x;
+@property int y;
+
 @end

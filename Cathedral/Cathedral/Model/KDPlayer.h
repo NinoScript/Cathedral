@@ -10,7 +10,7 @@
 
 @interface KDPlayer : NSObject
 
-@property KDPlayer *player;
+@property NSString *player;
 @property NSArray  *pieces;
 
 @end

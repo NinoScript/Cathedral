@@ -1,13 +1,13 @@
 //
-//  KDPoint.m
+//  KDBlock.m
 //  Cathedral
 //
 //  Created by Cristián Arenas Ulloa on 1/12/13.
 //  Copyright (c) 2013 Cristián Arenas Ulloa. All rights reserved.
 //
 
-#import "KDPoint.h"
+#import "KDBlock.h"
 
-@implementation KDPoint
+@implementation KDBlock
 
 @end

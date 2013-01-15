@@ -14,7 +14,12 @@
 @interface KDPlacement : NSObject
 
 @property KDPlayer *player;
-@property KDPiece  *building;
-@property KDPoint  *kdPoint;
+@property KDPiece  *piece;
+@property KDPoint  *location;
+
+-(id)initWithPiece:(KDPiece*)piece atLocation:(KDPoint*)location byPlayer:(KDPlayer*)player;
+
+	+(id)placementWithPiece:(KDPiece*)piece atLocation:(KDPoint*)location byPlayer:(KDPlayer*)player;
+
 
 @end

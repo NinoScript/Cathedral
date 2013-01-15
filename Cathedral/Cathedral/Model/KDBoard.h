@@ -7,11 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "KDPoint.h"
+#import "KDBlock.h"
+#import "KDPiece.h"
+#import "KDPlayer.h"
 
 @interface KDBoard : NSObject
 
-@property NSArray *placements;
-@property KDPoint *boardSize;
+@property NSMutableArray *placements;
+
+-(BOOL)canPlacePiece:(KDPiece*)piece atLocation:(KDPoint*)location;
+-(void)   placePiece:(KDPiece*)piece atLocation:(KDPoint*)location byPlayer:(KDPlayer*)player;
 
 @end

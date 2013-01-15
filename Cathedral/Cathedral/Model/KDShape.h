@@ -10,6 +10,8 @@
 
 @interface KDShape : NSObject
 
-@property NSArray *blocks;
+@property (readonly) NSArray *blocks;
+
+-(id)initWithBlocks:(NSArray*)blocks;
 
 @end

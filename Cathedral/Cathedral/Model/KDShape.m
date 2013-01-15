@@ -7,7 +7,26 @@
 //
 
 #import "KDShape.h"
+#import "KDBlock.h"
+
+@interface KDShape ()
+
+@property NSArray *blocks;
+
+@end
 
 @implementation KDShape
+
+- (id)init
+{
+	return [self initWithBlocks:[NSArray arrayWithObjects:[KDBlock new], nil]];
+}
+-(id)initWithBlocks:(NSArray*)blocks {
+	self = [super init];
+	if (self) {
+		self.blocks = blocks;
+	}
+	return self;
+}
 
 @end

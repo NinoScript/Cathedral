@@ -8,10 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "KDShape.h"
+#import "KDPoint.h"
 
 @interface KDPiece : NSObject
 
-@property KDShape    *shape;
-@property NSString *cardinalOrientation;
+@property KDShape  *shape;
+@property NSString *orientation;
+
+-(BOOL)collidesWith:(KDPiece*)piece atRelativeLocation:(KDPoint*)location;
 
 @end
