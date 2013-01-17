@@ -7,10 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "KDPoint.h"
 
 @interface KDBlock : NSObject
 
 @property int x;
 @property int y;
+
+-(BOOL)collidesWith:(KDBlock*)block atRelativeLocation:(KDPoint*)location;
 
 @end

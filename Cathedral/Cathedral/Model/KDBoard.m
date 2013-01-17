@@ -37,14 +37,12 @@
 
 - (BOOL)canPlacePiece:(KDPiece *)piece atLocation:(KDPoint *)location
 {
-	__block BOOL canPlace = YES;
-	[self.placements enumerateObjectsUsingBlock:^(KDPlacement *placement, NSUInteger idx, BOOL *stop) {
+	for (KDPlacement *placement in self.placements) {
 		if ([placement.piece collidesWith:piece atRelativeLocation:location]) {
-			canPlace = NO;
-			*stop = YES;
+			return NO;
 		}
-	}];
-	return canPlace;
+	}
+	return YES;
 }
 
 - (void)placePiece:(KDPiece *)piece atLocation:(KDPoint *)location byPlayer:(KDPlayer *)player

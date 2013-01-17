@@ -10,4 +10,11 @@
 
 @implementation KDBlock
 
+-(BOOL)collidesWith:(KDBlock*)block atRelativeLocation:(KDPoint*)location
+{
+	return self.x == block.x + location.x
+	    && self.y == block.y + location.y;
+}
+
 @end
+

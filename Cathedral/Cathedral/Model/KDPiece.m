@@ -12,16 +12,14 @@
 @implementation KDPiece
 
 -(BOOL)collidesWith:(KDPiece*)piece atRelativeLocation:(KDPoint*)location {
-	__block BOOL isColliding = NO;
-	[self.shape.blocks enumerateObjectsUsingBlock:^(KDBlock *myBlock, NSUInteger idx1, BOOL *stop1) {
-		[piece.shape.blocks enumerateObjectsUsingBlock:^(KDBlock *block, NSUInteger idx2, BOOL *stop2) {
-			if (myBlock.x == block.x + location.x
-			    && myBlock.y == block.y + location.y) {
-				isColliding = *stop1 = *stop2 = YES;
+	for (KDBlock *myBlock in self.shape.blocks) {
+		for (KDBlock *block in piece.shape.blocks) {
+			if ([myBlock collidesWith:block atRelativeLocation:location]) {
+				return YES;
 			}
-		}];
-	}];
-	return isColliding;
+		}
+	}
+	return NO;
 }
 
 @end
