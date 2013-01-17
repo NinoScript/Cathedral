@@ -7,10 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "KDPiece.h"
 
 @interface KDPlayer : NSObject
 
 @property NSString *player;
-@property NSArray  *pieces;
+
+- (id)initWithID:(NSString*)playerID;
+- (void)receivePieces:(NSArray*)pieces;
+- (void)givePiece:(KDPiece*)piece;
+
+@end
+
+@interface KDPlayer (Collections)
+
+@property (readonly) NSArray *pieces;
 
 @end
