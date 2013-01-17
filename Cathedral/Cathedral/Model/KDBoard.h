@@ -10,6 +10,7 @@
 #import "KDBlock.h"
 #import "KDPiece.h"
 #import "KDPlayer.h"
+#import "KDPlacement.h"
 
 @interface KDBoard : NSObject
 
@@ -17,5 +18,7 @@
 
 -(BOOL)canPlacePiece:(KDPiece*)piece atLocation:(KDPoint*)location;
 -(void)   placePiece:(KDPiece*)piece atLocation:(KDPoint*)location byPlayer:(KDPlayer*)player;
+-(BOOL)canAddPlacement:(KDPlacement*)placement;
+-(void)   addPlacement:(KDPlacement*)placement;
 
 @end

@@ -7,7 +7,6 @@
 //
 
 #import "KDBoard.h"
-#import "KDPlacement.h"
 
 @interface KDBoard ()
 
@@ -50,7 +49,18 @@
 
 - (void)placePiece:(KDPiece *)piece atLocation:(KDPoint *)location byPlayer:(KDPlayer *)player
 {
-	[self.placements addObject:[KDPlacement placementWithPiece:piece atLocation:location byPlayer:player]];
+	[self addPlacement:[KDPlacement placementWithPiece:piece atLocation:location byPlayer:player]];
+}
+
+- (BOOL)canAddPlacement:(KDPlacement *)placement
+{
+	return [self canPlacePiece:placement.piece
+			atLocation:placement.location];
+}
+
+- (void)addPlacement:(KDPlacement *)placement
+{
+	[self.placements addObject:placement];
 }
 
 @end
