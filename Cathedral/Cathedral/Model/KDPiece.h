@@ -16,5 +16,8 @@
 @property NSString *orientation;
 
 -(BOOL)collidesWith:(KDPiece*)piece atRelativeLocation:(KDPoint*)location;
+- (id) initWithShape:(KDShape*)shape;
++ (id)pieceWithShape:(KDShape*)shape;
+
 
 @end

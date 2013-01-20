@@ -12,6 +12,7 @@
 
 @property (readonly) NSArray *blocks;
 
--(id)initWithBlocks:(NSArray*)blocks;
+- (id) initWithBlocks:(NSArray*)blocks;
++ (id)shapeWithBlocks:(NSArray*)blocks;
 
 @end

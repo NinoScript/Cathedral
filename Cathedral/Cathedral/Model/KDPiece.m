@@ -11,7 +11,22 @@
 
 @implementation KDPiece
 
--(BOOL)collidesWith:(KDPiece*)piece atRelativeLocation:(KDPoint*)location {
+- (id)initWithShape:(KDShape*)shape
+{
+	self = [super init];
+	if (self) {
+		self.shape = shape;
+		self.orientation = @"N";
+	}
+	return self;
+}
+
++ (id)pieceWithShape:(KDShape *)shape
+{
+	return [[self alloc] initWithShape:shape];
+}
+
+- (BOOL)collidesWith:(KDPiece*)piece atRelativeLocation:(KDPoint*)location {
 	for (KDBlock *myBlock in self.shape.blocks) {
 		for (KDBlock *block in piece.shape.blocks) {
 			if ([myBlock collidesWith:block atRelativeLocation:location]) {

@@ -16,4 +16,7 @@
 
 -(BOOL)collidesWith:(KDBlock*)block atRelativeLocation:(KDPoint*)location;
 
+- (id) initWithX:(int)x Y:(int)y;
++ (id)blockWithX:(int)x Y:(int)y;
+
 @end

@@ -22,11 +22,13 @@
 		731278E816A1F79B00DCCD95 /* KDPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 731278E716A1F79B00DCCD95 /* KDPlayer.m */; };
 		731278EB16A1F7D700DCCD95 /* KDBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 731278EA16A1F7D700DCCD95 /* KDBoard.m */; };
 		731278EE16A1F81D00DCCD95 /* KDPiece.m in Sources */ = {isa = PBXBuildFile; fileRef = 731278ED16A1F81D00DCCD95 /* KDPiece.m */; };
-		731278F116A1F86500DCCD95 /* KDGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 731278F016A1F86500DCCD95 /* KDGame.m */; };
+		731278F116A1F86500DCCD95 /* KDGameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 731278F016A1F86500DCCD95 /* KDGameModel.m */; };
 		731278F416A1F88400DCCD95 /* KDBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 731278F316A1F88300DCCD95 /* KDBlock.m */; };
 		731278F716A1F8A500DCCD95 /* KDPlacement.m in Sources */ = {isa = PBXBuildFile; fileRef = 731278F616A1F8A500DCCD95 /* KDPlacement.m */; };
 		731278FA16A1F8F700DCCD95 /* KDShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 731278F916A1F8F700DCCD95 /* KDShape.m */; };
 		731278FD16A3A9A700DCCD95 /* KDPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 731278FC16A3A9A600DCCD95 /* KDPoint.m */; };
+		73B0F71916AB6DF00002B82E /* NSArray+Bidimensional.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B0F71816AB6DEF0002B82E /* NSArray+Bidimensional.m */; };
+		73B0F71C16AB6FBA0002B82E /* NSMutableArray+Bidimensional.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B0F71B16AB6FBA0002B82E /* NSMutableArray+Bidimensional.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,8 +55,8 @@
 		731278EA16A1F7D700DCCD95 /* KDBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KDBoard.m; path = Model/KDBoard.m; sourceTree = "<group>"; };
 		731278EC16A1F81D00DCCD95 /* KDPiece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KDPiece.h; path = Model/KDPiece.h; sourceTree = "<group>"; };
 		731278ED16A1F81D00DCCD95 /* KDPiece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KDPiece.m; path = Model/KDPiece.m; sourceTree = "<group>"; };
-		731278EF16A1F86500DCCD95 /* KDGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KDGame.h; path = Model/KDGame.h; sourceTree = "<group>"; };
-		731278F016A1F86500DCCD95 /* KDGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KDGame.m; path = Model/KDGame.m; sourceTree = "<group>"; };
+		731278EF16A1F86500DCCD95 /* KDGameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KDGameModel.h; path = Model/KDGameModel.h; sourceTree = "<group>"; };
+		731278F016A1F86500DCCD95 /* KDGameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KDGameModel.m; path = Model/KDGameModel.m; sourceTree = "<group>"; };
 		731278F216A1F88300DCCD95 /* KDBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KDBlock.h; path = Model/KDBlock.h; sourceTree = "<group>"; };
 		731278F316A1F88300DCCD95 /* KDBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KDBlock.m; path = Model/KDBlock.m; sourceTree = "<group>"; };
 		731278F516A1F8A500DCCD95 /* KDPlacement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KDPlacement.h; path = Model/KDPlacement.h; sourceTree = "<group>"; };
@@ -63,6 +65,11 @@
 		731278F916A1F8F700DCCD95 /* KDShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KDShape.m; path = Model/KDShape.m; sourceTree = "<group>"; };
 		731278FB16A3A9A600DCCD95 /* KDPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KDPoint.h; path = Model/KDPoint.h; sourceTree = "<group>"; };
 		731278FC16A3A9A600DCCD95 /* KDPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KDPoint.m; path = Model/KDPoint.m; sourceTree = "<group>"; };
+		7344A1AF16A8C70500FB54D9 /* KDGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KDGame.h; path = Model/KDGame.h; sourceTree = "<group>"; };
+		73B0F71716AB6DEF0002B82E /* NSArray+Bidimensional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Bidimensional.h"; path = "Model/NSArray+Bidimensional.h"; sourceTree = "<group>"; };
+		73B0F71816AB6DEF0002B82E /* NSArray+Bidimensional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Bidimensional.m"; path = "Model/NSArray+Bidimensional.m"; sourceTree = "<group>"; };
+		73B0F71A16AB6FB90002B82E /* NSMutableArray+Bidimensional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+Bidimensional.h"; path = "Model/NSMutableArray+Bidimensional.h"; sourceTree = "<group>"; };
+		73B0F71B16AB6FBA0002B82E /* NSMutableArray+Bidimensional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+Bidimensional.m"; path = "Model/NSMutableArray+Bidimensional.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,8 +151,8 @@
 				731278EA16A1F7D700DCCD95 /* KDBoard.m */,
 				731278EC16A1F81D00DCCD95 /* KDPiece.h */,
 				731278ED16A1F81D00DCCD95 /* KDPiece.m */,
-				731278EF16A1F86500DCCD95 /* KDGame.h */,
-				731278F016A1F86500DCCD95 /* KDGame.m */,
+				731278EF16A1F86500DCCD95 /* KDGameModel.h */,
+				731278F016A1F86500DCCD95 /* KDGameModel.m */,
 				731278F216A1F88300DCCD95 /* KDBlock.h */,
 				731278F316A1F88300DCCD95 /* KDBlock.m */,
 				731278FB16A3A9A600DCCD95 /* KDPoint.h */,
@@ -154,8 +161,21 @@
 				731278F616A1F8A500DCCD95 /* KDPlacement.m */,
 				731278F816A1F8F700DCCD95 /* KDShape.h */,
 				731278F916A1F8F700DCCD95 /* KDShape.m */,
+				7344A1AF16A8C70500FB54D9 /* KDGame.h */,
+				73B0F72116AB71170002B82E /* Categories */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		73B0F72116AB71170002B82E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				73B0F71716AB6DEF0002B82E /* NSArray+Bidimensional.h */,
+				73B0F71816AB6DEF0002B82E /* NSArray+Bidimensional.m */,
+				73B0F71A16AB6FB90002B82E /* NSMutableArray+Bidimensional.h */,
+				73B0F71B16AB6FBA0002B82E /* NSMutableArray+Bidimensional.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,11 +252,13 @@
 				731278E816A1F79B00DCCD95 /* KDPlayer.m in Sources */,
 				731278EB16A1F7D700DCCD95 /* KDBoard.m in Sources */,
 				731278EE16A1F81D00DCCD95 /* KDPiece.m in Sources */,
-				731278F116A1F86500DCCD95 /* KDGame.m in Sources */,
+				731278F116A1F86500DCCD95 /* KDGameModel.m in Sources */,
 				731278F416A1F88400DCCD95 /* KDBlock.m in Sources */,
 				731278F716A1F8A500DCCD95 /* KDPlacement.m in Sources */,
 				731278FA16A1F8F700DCCD95 /* KDShape.m in Sources */,
 				731278FD16A3A9A700DCCD95 /* KDPoint.m in Sources */,
+				73B0F71916AB6DF00002B82E /* NSArray+Bidimensional.m in Sources */,
+				73B0F71C16AB6FBA0002B82E /* NSMutableArray+Bidimensional.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +385,7 @@
 				731278DC16A1F3D800DCCD95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

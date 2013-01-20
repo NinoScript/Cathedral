@@ -7,6 +7,7 @@
 //
 
 #import "KDBoard.h"
+#import "NSMutableArray+Bidimensional.h"
 
 @interface KDBoard ()
 
@@ -19,10 +20,10 @@
 
 - (id)init
 {
-	return [self initWithWidth:0 andHeight:0]; // Will crash :B
+	return [self initWithWidth:0 height:0]; // Will crash :B
 }
 
-- (id)initWithWidth:(unsigned int)width andHeight:(unsigned int)height
+- (id)initWithWidth:(unsigned int)width height:(unsigned int)height
 {
 	NSAssert(width>0 && height>0, @"Null sized board");
 	
@@ -34,6 +35,12 @@
 	}
 	return self;
 }
+
++ (id)boardWithWidth:(unsigned int)width height:(unsigned int)height
+{
+	return [[self alloc] initWithWidth:width height:height];
+}
+
 
 - (BOOL)canPlacePiece:(KDPiece *)piece atLocation:(KDPoint *)location
 {
@@ -59,6 +66,25 @@
 - (void)addPlacement:(KDPlacement *)placement
 {
 	[self.placements addObject:placement];
+}
+
+- (NSArray*)bidimensionalArrayRepresentation
+{
+	NSMutableArray *array = [NSMutableArray arrayWithCapacity:self.width*self.height];
+	
+	for (int i=0; i<self.width*self.height; ++i) {
+		[array addObject:[NSNumber numberWithInt:0]];
+	}
+	for (KDPlacement *placement in self.placements) {
+		for (KDBlock *block in placement.piece.shape.blocks) {
+			[array replaceObjectAtIndexX:block.x+placement.location.x
+						   Y:block.y+placement.location.y
+					  whereWidth:self.width
+					  withObject:placement];
+		}
+	}
+	
+	return [array copy];
 }
 
 @end

@@ -26,13 +26,18 @@
 	return self;
 }
 
++ (id)playerWithID:(NSString *)playerID
+{
+	return [[self alloc] initWithID:playerID];
+}
+
 - (void)receivePieces:(NSArray*)pieces
 {
-	NSAssert([pieces count] == 0 || [pieces objectAtIndex:0] isKindOfClass:[KDPiece class], "Array is not of pieces.");
+	NSAssert([pieces count] == 0 || [[pieces objectAtIndex:0] isKindOfClass:[KDPiece class]], @"Array is not of pieces.");
 	[self.pieces addObjectsFromArray:pieces];
 }
 
--(void)givePiece:(KDPiece *)piece
+- (void)givePiece:(KDPiece *)piece
 {
 	[self.pieces removeObject:piece];
 }

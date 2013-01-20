@@ -13,7 +13,9 @@
 
 @property NSString *player;
 
-- (id)initWithID:(NSString*)playerID;
+- (id)  initWithID:(NSString*)playerID;
++ (id)playerWithID:(NSString*)playerID;
+
 - (void)receivePieces:(NSArray*)pieces;
 - (void)givePiece:(KDPiece*)piece;
 

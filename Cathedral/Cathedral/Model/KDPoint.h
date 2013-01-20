@@ -13,4 +13,7 @@
 @property int x;
 @property int y;
 
+- (id) initWithX:(int)x Y:(int)y;
++ (id)pointWithX:(int)x Y:(int)y;
+
 @end

@@ -21,12 +21,18 @@
 {
 	return [self initWithBlocks:[NSArray arrayWithObjects:[KDBlock new], nil]];
 }
--(id)initWithBlocks:(NSArray*)blocks {
+
+- (id)initWithBlocks:(NSArray*)blocks {
 	self = [super init];
 	if (self) {
 		self.blocks = blocks;
 	}
 	return self;
+}
+
++ (id)shapeWithBlocks:(NSArray *)blocks
+{
+	return [[self alloc] initWithBlocks:blocks];
 }
 
 @end

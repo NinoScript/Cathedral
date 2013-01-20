@@ -16,9 +16,13 @@
 
 @property NSMutableArray *placements;
 
--(BOOL)canPlacePiece:(KDPiece*)piece atLocation:(KDPoint*)location;
--(void)   placePiece:(KDPiece*)piece atLocation:(KDPoint*)location byPlayer:(KDPlayer*)player;
--(BOOL)canAddPlacement:(KDPlacement*)placement;
--(void)   addPlacement:(KDPlacement*)placement;
+- (BOOL)canPlacePiece:(KDPiece*)piece atLocation:(KDPoint*)location;
+- (void)   placePiece:(KDPiece*)piece atLocation:(KDPoint*)location byPlayer:(KDPlayer*)player;
+- (BOOL)canAddPlacement:(KDPlacement*)placement;
+- (void)   addPlacement:(KDPlacement*)placement;
 
+- (id) initWithWidth:(unsigned int)width height:(unsigned int)height;
++ (id)boardWithWidth:(unsigned int)width height:(unsigned int)height;
+
+- (NSArray*)bidimensionalArrayRepresentation;
 @end

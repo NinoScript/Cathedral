@@ -16,5 +16,19 @@
 	    && self.y == block.y + location.y;
 }
 
+- (id)initWithX:(int)x Y:(int)y
+{
+	self = [super init];
+	if (self) {
+		self.x = x;
+		self.y = y;
+	}
+	return self;
+}
++ (id)blockWithX:(int)x Y:(int)y
+{
+	return [(KDBlock*)[self alloc] initWithX:x Y:y];
+}
+
 @end
 
