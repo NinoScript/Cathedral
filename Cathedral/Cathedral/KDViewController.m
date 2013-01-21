@@ -23,6 +23,8 @@
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
+	
+	/* Model Setup */
 	self.p1 = [KDPlayer playerWithID:@"blanco"];
 	self.p2 = [KDPlayer playerWithID:@"negro"];
 	self.board = [KDBoard boardWithWidth:10 height:10];
@@ -62,6 +64,8 @@
 	[self.p2 receivePieces:piecesForP2];
 	
 	self.game = [KDGameModel gameWithPlayer1:self.p1 player2:self.p2 andBoard:self.board];
+	
+	/* View Setup */
 }
 
 @end
