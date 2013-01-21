@@ -77,8 +77,10 @@
 	}
 	for (KDPlacement *placement in self.placements) {
 		for (KDBlock *block in placement.piece.shape.blocks) {
-			[array replaceObjectAtIndexX:block.x+placement.location.x
-						   Y:block.y+placement.location.y
+			int x = block.x+placement.location.x;
+			int y = block.y+placement.location.y;
+			NSAssert(x>=0 && x<self.width && y>=0 && y<self.height, @"Piece out of bounds.");
+			[array replaceObjectAtIndexX:x Y:y
 					  whereWidth:self.width
 					  withObject:placement];
 		}
